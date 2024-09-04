@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Pricing Updater</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header" background="#1abc9c" color="white">
+        <h2>Invoice Pricing Updater</h2>
+    </div>
+    
+    <div class="panSelectionArea">
+        <label for="panNumbers">Select a PAN: </label>
+        <select class="panSelectBox" name="panNumbers" id="panNumbers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+        </select>
+        <button id="findInvoiceItemsButton" name="findInvoiceItemsButton">Find Invoice Items</button>
+        <script src="script.js"></script>
+        <h1 id="invalidTabMessage">This extension is only applicable on the QuickBooks invoice page.</h1>
+        <button id="reloadButton">Reload</button>
+    </div>
+    
+</body>
+</html>

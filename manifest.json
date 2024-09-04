@@ -1,0 +1,25 @@
+{
+    "name": "Invoice Pricing Updater",
+    "version": "0.0.1",
+    "description": "Updates pricing on a QuickBooks invoice when price rules are disabled",
+    "manifest_version": 3,
+    "author": "Steve Matthews",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Invoice Pricing Updater"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://qbo.intuit.com/*"],
+            "js": ["script.js"]
+        }
+    ]
+}

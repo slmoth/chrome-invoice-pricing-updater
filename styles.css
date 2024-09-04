@@ -1,0 +1,84 @@
+html, body {
+    height: 500px;
+    width: 500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e4e4;
+}
+
+/* Header/Logo Title */
+.header {
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    background: linear-gradient(135deg,#2193b0, #6dd5ed);
+    color: white;
+}
+
+.header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pan Selection */
+.panSelectionArea {
+    background-color: rgb(211, 208, 208);
+    border-color: black;
+    margin: 10px;
+    padding: 1%;
+    flex-grow: 1;
+}
+
+.panSelectionArea label {
+    display: block;
+    font-size: 18px; /* Font size for the label */
+    color: #333; /* Dark color for the label text */
+    margin-bottom: 5px; /* Space between label and select box */
+    font-weight: bold; /* Make the label text bold */
+}
+
+.panSelectBox {
+    display: block;
+    min-width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #fff; /* White background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px; /* Padding inside the select box */
+    font-size: 15px; /* Font size */
+    color: #333; /* Text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+    width: 10%; /* Full width of the parent container */
+}
+
+.panSelectBox:focus {
+    border-color: #6dd5ed; /* Change border color on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+.panSelectionArea button {
+    margin-top: 5px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Gradient background */
+    border: none; /* Removes the default border */
+    border-radius: 25px; /* Rounded corners */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Removes underline for links */
+    display: inline-block; /* Makes it behave like an inline element */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.panSelectionArea button:hover {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed); /* Reverse the gradient on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+    /*transform: translateY(-2px);  Lift the button slightly */
+}
