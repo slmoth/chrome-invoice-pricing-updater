@@ -55,14 +55,10 @@ function invoiceItemSearch() {
     } else {
         console.error('chrome runtime not available');
     }
-    /* const rowData = getRowData();
-    if (!rowData) {
-        alert('No invoice data found');
-    } */
 }
 
 function getRowData() {
-    const rows = document.querySelectorAll('table.dgrid-row-table');
+    const rows = document.querySelectorAll('.dgrid-row');
     document.querySelectorAll
     console.log(document, rows);
     const results = [];

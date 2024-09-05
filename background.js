@@ -16,11 +16,18 @@ function executeScriptInTab(tabId) {
 // Function to query '.dgrid-row-table' elements in the page
 function queryDgridRowTables() {
     const tables = document.querySelectorAll('.dgrid-row-table');
+    const rows = document.querySelectorAll('.dgrid-row');
+    const rowsResult = Array.from(rows).map(row => {
+        return {
+            html: row.outerHTML
+        };
+    });
     const result = Array.from(tables).map(table => {
         return {
             html: table.outerHTML
         };
     });
+    console.log('rows found:', rowsResult);
     console.log('Tables found:', result);
     return result;
 }
